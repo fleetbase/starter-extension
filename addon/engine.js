@@ -7,7 +7,7 @@ import services from '@fleetbase/ember-core/exports/services';
 const { modulePrefix } = config;
 const externalRoutes = ['console', 'extensions'];
 
-export default class LedgerEngine extends Engine {
+export default class StarterEngine extends Engine {
     modulePrefix = modulePrefix;
     Resolver = Resolver;
     dependencies = {
@@ -16,8 +16,8 @@ export default class LedgerEngine extends Engine {
     };
     setupExtension = function (app, engine, universe) {
         // register menu item in header
-        universe.registerHeaderMenuItem('Ledger', 'console.ledger', { icon: 'calculator', priority: 1 });
+        universe.registerHeaderMenuItem('Starter', 'console.starter', { icon: 'layer-group', priority: 5 });
     };
 }
 
-loadInitializers(LedgerEngine, modulePrefix);
+loadInitializers(StarterEngine, modulePrefix);
