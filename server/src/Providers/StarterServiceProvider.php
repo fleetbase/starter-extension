@@ -5,7 +5,7 @@ namespace Fleetbase\Starter\Providers;
 use Fleetbase\Providers\CoreServiceProvider;
 
 if (!class_exists(CoreServiceProvider::class)) {
-    throw new \Exception('Starter cannot be loaded without `fleetbase/core-api` installed!');
+    throw new \Exception('Extension cannot be loaded without `fleetbase/core-api` installed!');
 }
 
 /**

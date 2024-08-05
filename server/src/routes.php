@@ -17,7 +17,7 @@ Route::prefix(config('starter.api.routing.prefix', 'starter'))->namespace('Fleet
     function ($router) {
         /*
         |--------------------------------------------------------------------------
-        | Internal Billing API Routes
+        | Starter API Routes
         |--------------------------------------------------------------------------
         |
         | Primary internal routes for console.
