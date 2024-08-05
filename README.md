@@ -1,6 +1,6 @@
 <p align="center">
     <p align="center">
-        <img src="https://github.com/user-attachments/assets/197c404c-06b1-4fd4-8a26-624f1d481966" width="280" height="280" />
+        <img src="https://github.com/user-attachments/assets/afac09ee-1fbf-423b-b2a6-7f05a06b12b2" width="180" height="180" />
     </p>
     <p align="center">
         Starter Extension for Fleetbase
