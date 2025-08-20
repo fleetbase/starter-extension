@@ -119,4 +119,4 @@ pnpm build
 See the Contributing Guide for details on how to contribute to this project.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the AGPL v3 License.
