@@ -37,8 +37,8 @@
         "publish:github": "npm config set '@fleetbase:registry' https://npm.pkg.github.com/ && npm publish"
     },
     "dependencies": {
-        "@fleetbase/ember-core": "^0.2.21",
-        "@fleetbase/ember-ui": "^0.2.34",
+        "@fleetbase/ember-core": "latest",
+        "@fleetbase/ember-ui": "latest",
         "@fortawesome/ember-fontawesome": "^2.0.0",
         "@fortawesome/fontawesome-svg-core": "6.4.0",
         "@fortawesome/free-solid-svg-icons": "6.4.0",
