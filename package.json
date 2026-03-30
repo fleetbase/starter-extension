@@ -11,7 +11,7 @@
     "fleetbase": {
         "route": "starter"
     },
-    "repository": "https://github.com/fleetbase/extension-starter",
+    "repository": "https://github.com/fleetbase/starter-extension",
     "license": "AGPL-3.0-or-later",
     "author": "Fleetbase Pte Ltd <hello@fleetbase.io>",
     "directories": {
@@ -37,13 +37,13 @@
         "publish:github": "npm config set '@fleetbase:registry' https://npm.pkg.github.com/ && npm publish"
     },
     "dependencies": {
-        "@fleetbase/ember-core": "latest",
-        "@fleetbase/ember-ui": "latest",
+        "@babel/core": "^7.23.2",
+        "@fleetbase/ember-core": "^0.3.18",
+        "@fleetbase/ember-ui": "^0.3.25",
         "@fortawesome/ember-fontawesome": "^2.0.0",
         "@fortawesome/fontawesome-svg-core": "6.4.0",
-        "@fortawesome/free-solid-svg-icons": "6.4.0",
         "@fortawesome/free-brands-svg-icons": "6.4.0",
-        "@babel/core": "^7.23.2",
+        "@fortawesome/free-solid-svg-icons": "6.4.0",
         "broccoli-funnel": "^3.0.8",
         "ember-auto-import": "^2.7.4",
         "ember-cli-babel": "^8.2.0",
