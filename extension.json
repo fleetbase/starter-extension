@@ -6,5 +6,9 @@
     "license": "AGPL-3.0-or-later",
     "author": "Fleetbase Pte Ltd <hello@fleetbase.io>",
     "engine": "package.json",
-    "api": "composer.json"
+    "api": "composer.json",
+    "compat": {
+        "console": ">=0.8.0 <0.10.0",
+        "api": "^2.0"
+    }
 }
