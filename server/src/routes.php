@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix(config('starter.api.routing.prefix', 'starter'))->namespace('Fleetbase\Starter\Http\Controllers')->group(
-    function ($router) {
+/** @var string $prefix */
+$prefix = config('starter.api.routing.prefix', 'starter');
+/** @var string $internalPrefix */
+$internalPrefix = config('starter.api.routing.internal_prefix', 'int');
+
+Route::prefix($prefix)->namespace('Fleetbase\Starter\Http\Controllers')->group(
+    function (Router $router) use ($internalPrefix) {
         /*
         |--------------------------------------------------------------------------
         | Starter API Routes
@@ -22,11 +28,11 @@ Route::prefix(config('starter.api.routing.prefix', 'starter'))->namespace('Fleet
         |
         | Primary internal routes for console.
         */
-        $router->prefix(config('starter.api.routing.internal_prefix', 'int'))->group(
-            function ($router) {
+        $router->prefix($internalPrefix)->group(
+            function (Router $router) {
                 $router->group(
                     ['prefix' => 'v1', 'middleware' => ['fleetbase.protected']],
-                    function ($router) {
+                    function (Router $router) {
                         // $router->fleetbaseRoutes('resource');
                     }
                 );

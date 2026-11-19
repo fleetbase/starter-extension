@@ -4,6 +4,10 @@
 # compiled output
 /dist/
 
+# Composer packages (vendor-dir is server_vendor)
+/server_vendor/
+/vendor/
+
 # misc
 /coverage/
 !.*

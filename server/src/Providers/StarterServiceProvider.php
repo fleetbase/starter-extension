@@ -16,7 +16,7 @@ class StarterServiceProvider extends CoreServiceProvider
     /**
      * The observers registered with the service provider.
      *
-     * @var array
+     * @var array<class-string, class-string>
      */
     public $observers = [];
 
@@ -29,7 +29,7 @@ class StarterServiceProvider extends CoreServiceProvider
      * register method.
      *
      * More information on this can be found in the Laravel documentation:
-     * https://laravel.com/docs/8.x/providers
+     * https://laravel.com/docs/12.x/providers
      *
      * @return void
      */

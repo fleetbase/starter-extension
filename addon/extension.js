@@ -1,4 +1,6 @@
-import { MenuItem, Widget, ExtensionComponent } from '@fleetbase/ember-core/contracts';
+// Menu items, widgets and components registered with the universe use the contracts in
+// @fleetbase/ember-core/contracts, for example:
+// import { MenuItem, Widget, ExtensionComponent } from '@fleetbase/ember-core/contracts';
 
 export default {
     setupExtension(app, universe) {
@@ -11,5 +13,5 @@ export default {
             description: 'Samle starter extension for developing in Fleetbase.',
             shortcuts: [],
         });
-    }
+    },
 };

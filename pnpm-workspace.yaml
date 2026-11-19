@@ -1,3 +1,5 @@
+# These packages only print donation notices or provide optional macOS watchers.
+# CI builds do not need to execute their dependency install scripts.
 allowBuilds:
   '@fortawesome/fontawesome-common-types': false
   '@fortawesome/fontawesome-svg-core': false
@@ -5,4 +7,3 @@ allowBuilds:
   '@fortawesome/free-solid-svg-icons': false
   core-js: false
   fsevents: false
-minimumReleaseAge: 0
